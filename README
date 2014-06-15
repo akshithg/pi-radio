@@ -1,0 +1,30 @@
+from: http://techzei.com/how-to-build-a-raspberry-pi-radio-transmitter/http://techzei.com/how-to-build-a-raspberry-pi-radio-transmitter/
+
+Hardware Required 
+===================
+Raspberry Pi.
+SD Card.
+Jumper Cable
+Mobile Phone or FM Radio
+Wiring 
+
+Connect a jumper cable to header 7 of the Raspberry Pi, the jumper cable acts as the transmitter for Radio.
+
+Procedure
+============
+Step 1 : Connect to your Raspberry Pi through ssh or open the Terminal in your Raspberry Pi
+
+Step 2 : Type this into the terminal
+	wget http://www.omattos.com/pifm.tar.gz
+This will download the python script that helps with the transmission
+
+Step 3 : Untar the file you downloaded. Type this into the terminal
+	tar xvzf pifm.tar.gz
+
+Step 4 : Now change directory to the pifm folder
+	cd pifm
+
+Step 5 : Open your Radio App on your phone or if you still have a functioning radio tune to 100Mhz and then in your terminal type
+	sudo ./pifm sound.wav 100.0
+
+If everything went well you should now be hearing Star Wars sound track in your radio.
